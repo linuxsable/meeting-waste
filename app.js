@@ -34,6 +34,7 @@ class App {
       { value: "every-other-day", text: "Every other day" },
       { value: "daily", text: "Daily" },
       { value: "weekly", text: "Weekly" },
+      { value: "twice-monthly", text: "Twice a month" },
       { value: "monthly", text: "Monthly" },
       { value: "quarterly", text: "Quarterly" },
     ];
@@ -138,6 +139,12 @@ class App {
           weeklyWaste += row.duration;
           monthlyWaste += row.duration * numWeeksInAMonth;
           yearlyWaste += row.duration * numWeeksInAMonth * numMonthsInAYear;
+          break;
+        case "twice-monthly":
+          dailyWaste += (row.duration * 2) / numWeeksInAMonth / numDaysInAWeek;
+          weeklyWaste += (row.duration * 2) / numWeeksInAMonth;
+          monthlyWaste += row.duration * 2;
+          yearlyWaste += row.duration * 2 * numMonthsInAYear;
           break;
         case "monthly":
           dailyWaste += row.duration / numDaysInAWeek / numWeeksInAMonth;
