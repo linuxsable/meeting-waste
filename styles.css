@@ -1,0 +1,45 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir", "Courier New", Courier;
+  font-size: 1em;
+  margin: 50px;
+  max-width: 800px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+footer {
+  font-size: 0.9em;
+  margin: 50px 0;
+}
+
+.add-meeting {
+  padding-top: 8px;
+}
+
+.items .row {
+  padding-bottom: 8px;
+}
+
+.items select {
+  padding: 2px;
+  margin-right: 8px;
+}
+
+a.delete-link {
+  padding-left: 8px;
+}
+
+a,
+a:visited {
+  color: #147efb;
+}

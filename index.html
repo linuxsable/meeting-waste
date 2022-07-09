@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🗓 Meeting waste</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <h1>🗓 Meeting waste</h1>
+      <p>
+        We all feel it: there're way too many Zoom meetings. Fatigue is real. We
+        can be more async, but if we're not, what's the real cost?
+      </p>
+      <h3>🤷🏼‍♀️ Should I book that recurring meeting?</h3>
+      <div class="table">
+        <div class="items"></div>
+        <a
+          href="javascript:void(0);"
+          onclick="app.handleAddRowClicked(this)"
+          class="add-meeting"
+          >+ Add meeting</a
+        >
+      </div>
+      <div class="totals">
+        <h3>🧨 Total waste (in biz days)</h3>
+        <p>
+          🚫 Daily: <span class="daily-waste">00:00</span> <br />🚫 Weekly:
+          <span class="weekly-waste">00:00</span> <br />
+          🚫 Monthly: <span class="monthly-waste">00:00</span>
+        </p>
+        <p>
+          🤦🏼‍♀️ That's <span class="yearly-waste">0</span> hours of waste in a
+          year!
+        </p>
+      </div>
+    </section>
+    <footer>
+      Created with ❤️ by <a href="http://tylervh.com">Tyler Van Hoomissen</a>.
+    </footer>
+    <script src="app.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2QRCZ91QWM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-2QRCZ91QWM");
+    </script>
+  </body>
+</html>
