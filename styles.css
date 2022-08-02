@@ -21,9 +21,8 @@ h3 {
 footer {
   font-size: 0.8em;
   position: fixed;
-  bottom: 16px;
-  right: 16px;
-  /* margin: 50px 0; */
+  bottom: 12px;
+  right: 12px;
 }
 
 .add-meeting {
@@ -52,5 +51,5 @@ a.delete-link {
 
 a,
 a:visited {
-  color: #147efb;
+  color: #2a9d8f;
 }
